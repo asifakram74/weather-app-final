@@ -25,7 +25,7 @@ const Config = () => {
 
 	const getData = () => {
 		fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${getval}&APPID=b946c4fd34369ee6ee93080c9ac53218`,
+			`https://api.openweathermap.org/data/2.5/weather?q=${getval}&APPID=3d2da8da5e69f614cc32bece4b629445			`,
 			{
 				method: "GET",
 			},
@@ -100,11 +100,11 @@ const Config = () => {
 							{/* {city} */}
 						</div>
 						<div className="d-flex p-5">
-							<div className="col-6 weather-info pr-5">
-								<h2>
+							<div className="col-6 weather-info pr-5 col-sm-12 col-md-6">
+								{/* <h2>
 									{city == "" ? getval : city.name},
 									<span> {city == "" ? "PK" : city.sys.country}</span>
-								</h2>
+								</h2> */}
 								<div className="date">
 									<h5>Monday 01 March</h5>
 									<h5>01:55pm</h5>
@@ -117,7 +117,7 @@ const Config = () => {
 									</div>
 								</div>
 							</div>
-							<div className="col-6">
+							<div className="col-6 col-sm-12 weather-info col-md-6 border-right-0">
 								<div className=" ">
 									<div className="detail p-3">
 										<Temp value="55" station="high" />

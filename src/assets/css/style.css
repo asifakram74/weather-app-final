@@ -387,6 +387,24 @@ h2.agile-title {
 	.csslider > ul > li {
 		min-height: 486px;
 	}
+	.mian-layout {
+		width: 100% !important;
+	}
+	button.search_btn {
+		width: 41% !important;
+	}
+	.d-flex.p-5 {
+		padding: 30px 0 !important;
+		display: block !important;
+	}
+	.col-6.weather-info {
+		border-right: 0 !important;
+		padding-right: 0 !important;
+		max-width: 100%;
+	}
+	.detail.p-3 {
+		padding: 10px 0 !important;
+	}
 }
 @media screen and (max-width: 736px) {
 	.csslider > .navigation {
@@ -1701,12 +1719,12 @@ i {
 .temp {
 	width: 135px;
 }
-@media only screen and (max-width: 479px) {
-	.main {
-		width: 90%;
-		margin: 0 auto;
-		padding: 30px 0;
+
+@media only screen and (max-width: 768) {
+	.mian-layout {
+		width: 100%;
 	}
+
 	.date {
 		width: 100%;
 	}
