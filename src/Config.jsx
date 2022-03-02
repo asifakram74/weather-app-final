@@ -6,7 +6,7 @@ import Weather_info from "./components/Home/Weather_info";
 
 const Config = () => {
 	// get value from input
-	const [search, setSearch] = useState("Lahore");
+	const [search, setSearch] = useState("");
 	// save search value on getval
 	const [getval, setGetval] = useState("Lahore");
 	const [city, setCity] = useState("");
@@ -19,13 +19,17 @@ const Config = () => {
 	};
 
 	const onSearch = () => {
-		setGetval(search);
-		console.log(getval);
+		
+			getData(search);
+		
+		// setGetval(search);
+		// console.log(getval);
 	};
 
 	const getData = () => {
+		
 		fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${getval}&APPID=b946c4fd34369ee6ee93080c9ac53218`,
+			`https://api.openweathermap.org/data/2.5/weather?q=lahroe&APPID=b946c4fd34369ee6ee93080c9ac53218`,
 			{
 				method: "GET",
 			},
@@ -80,9 +84,10 @@ const Config = () => {
 	};
 	useEffect(() => {
 		{
-			getData();
+			// getData("Lahore");
 		}
 	}, []);
+	console.log(city)
 
 	return (
 		<div>
@@ -94,7 +99,7 @@ const Config = () => {
 						</h1>
 						<div className="search">
 							<input type="text" placeholder="Search" onChange={searchValue} />
-							<button type="submit" className="search_btn" onClick={onSearch}>
+							<button type="submit" className="search_btn" onClick={() => onSearch}>
 								Search Weather
 							</button>
 							{/* {city} */}
@@ -102,8 +107,8 @@ const Config = () => {
 						<div className="d-flex p-5">
 							<div className="col-6 weather-info pr-5">
 								<h2>
-									{city == "" ? getval : city.name},
-									<span> {city == "" ? "PK" : city.sys.country}</span>
+									{/* {city == "" ? getval : city.name},
+									<span> {city == "" ? "PK" : city.sys.country}</span> */}
 								</h2>
 								<div className="date">
 									<h5>Monday 01 March</h5>
