@@ -70,18 +70,15 @@ const Config = () => {
 			"November",
 			"December",
 		];
-		const monthP = () => getDate.getMonth();
-		const year = () => getDate.getFullYear();
-		const day = () => getDate.getDay();
-		const hours = () => getDate.getHours();
-		const minutes = () => getDate.getMinutes();
+		const monthP = getDate.getMonth();
+		const year = getDate.getFullYear();
+		const day = getDate.getDay();
+		const hours = getDate.getHours();
+		const minutes = getDate.getMinutes();
 
-		{
-			console.log(monthP);
-		}
-		{
-			console.log(getDate);
-		}
+		console.log(monthP);
+		console.log(year, day, hours, minutes);
+
 		// return (
 		// 	<>
 		// 		{console.log(monthP)}
