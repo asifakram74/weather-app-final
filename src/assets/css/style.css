@@ -188,20 +188,6 @@ h2.agile-title {
 	background-size: cover;
 }
 
-.csslider > ul > li:nth-child(2) {
-	background: url(../images/ban2.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.csslider > ul > li:nth-child(3) {
-	background: url(../images/ban3.jpg) no-repeat center;
-	background-size: cover;
-}
-.csslider > ul > li:last-child {
-	background: url(../images/ban4.jpg) no-repeat center;
-	background-size: cover;
-}
-
 .csslider {
 	position: relative;
 }
@@ -1258,7 +1244,7 @@ a.w3pvt_google {
 /* footer */
 
 .footer-content {
-	background: url(../images/banner2.jpg) center no-repeat;
+	/* background: url(../images/banner2.jpg) center no-repeat; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1678,8 +1664,8 @@ h3 {
 	flex-direction: column;
 }
 .date {
-	display: flex;
-	justify-content: space-between;
+	/* display: flex;
+	justify-content: space-between; */
 	font-size: 12px;
 	color: grey;
 }
@@ -1694,7 +1680,7 @@ i {
 	color: yellow;
 }
 .centig h2 {
-	font-size: 140px;
+	font-size: 100px;
 }
 .centi {
 	font-size: 150px;
@@ -1704,8 +1690,9 @@ i {
 }
 .detail {
 	display: flex;
-	margin-left: 50px;
-	justify-content: space-evenly;
+	/* margin-left: 50px; */
+	justify-content: space-between;
+	text-transform: capitalize;
 	text-align: center;
 
 	flex-wrap: wrap;
@@ -1716,9 +1703,9 @@ i {
 .detail div p span {
 	color: grey;
 }
-.temp {
+/* .temp {
 	width: 135px;
-}
+} */
 
 @media only screen and (max-width: 768) {
 	.mian-layout {
@@ -1740,8 +1727,5 @@ i {
 	}
 	.sky {
 		bottom: -6px;
-	}
-	.detail {
-		margin: 0;
 	}
 }
