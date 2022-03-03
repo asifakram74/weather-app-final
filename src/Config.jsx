@@ -1,9 +1,8 @@
 /** @format */
 
 import React, { useEffect, useState } from "react";
-import Temp from "./components/Home/Temp";
 import Weather_info from "./components/Home/Weather_info";
-import Icon from "./assets/images/icons/01d.png";
+import Icon from "./assets/images/01d.png";
 const Config = () => {
 	// get value from input
 	const [search, setSearch] = useState("");
@@ -25,7 +24,7 @@ const Config = () => {
 	const onSearch = () => {
 		setGetval(search);
 	};
-
+// Fetch Data from API
 	const getData = () => {
 		return fetch(
 			`${process.env.REACT_APP_API_URL}/weather?q=${getval}&units=imperial&APPID=${process.env.REACT_APP_API_KEY}`,
@@ -76,10 +75,8 @@ const Config = () => {
 
 	useEffect(() => {
 		getData();
-		// DisDate();
-	}, [getval]);
-	// console.log(getDate);
-	return (
+ 	}, [getval]);
+ 	return (
 		<>
 			<Weather_info
 				title="Find current weather condition"

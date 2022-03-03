@@ -25,12 +25,7 @@ const About = () => {
 								dolores et ea rebum.Integer sit amet mattis quam, sit amet
 								ultricies velit. Praesent ullamcorper dui turpis.
 							</p>
-							{/* <a
-							className="btn mt-lg-4 mt-3 read scroll"
-							href="#services"
-							role="button">
-							Learn More
-						</a> */}
+							
 						</div>
 					</div>
 				</div>
