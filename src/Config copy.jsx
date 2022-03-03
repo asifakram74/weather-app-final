@@ -80,20 +80,7 @@ const Config = () => {
 	}, [getval]);
 	// console.log(getDate);
 	return (
-		<>
-		<Weather_info 
-		title
-		
-		
-		
-		
-		
-		
-		>
-
-
-			</Weather_info>
-			<div>
+		<div>
 			<div className="name container">
 				<div className="row">
 					<div className="col-12">
@@ -188,8 +175,6 @@ const Config = () => {
 				</p> */}
 			</div>
 		</div>
-		</>
-		
 	);
 };
 
