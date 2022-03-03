@@ -6,7 +6,7 @@ import Weather_info from "./components/Home/Weather_info";
 // import Icon from './assets/images/icons'
 const Config = () => {
 	// get value from input
-	const [search, setSearch] = useState("Lahore");
+	const [search, setSearch] = useState("");
 	// save search value on getval
 	const [getval, setGetval] = useState("Lahore");
 	const [city, setCity] = useState("");
@@ -92,6 +92,7 @@ const Config = () => {
 			DisDate();
 		}
 	}, []);
+	console.log(city)
 
 	return (
 		<div>
@@ -103,7 +104,7 @@ const Config = () => {
 						</h1>
 						<div className="search">
 							<input type="text" placeholder="Search" onChange={searchValue} />
-							<button type="submit" className="search_btn" onClick={onSearch}>
+							<button type="submit" className="search_btn" onClick={() => onSearch}>
 								Search Weather
 							</button>
 							{/* {city} */}
@@ -111,8 +112,8 @@ const Config = () => {
 						<div className="  p-5">
 							<div className="col-12 weather-info pr-5 col-sm-12 col-md-12 text-center">
 								<h2>
-									{city == "" ? getval : city.name},
-									<span> {city == "" ? "PK" : city.sys.country}</span>
+									{/* {city == "" ? getval : city.name},
+									<span> {city == "" ? "PK" : city.sys.country}</span> */}
 								</h2>
 								<div className="date">
 									<h5>Monday 01 March</h5>
