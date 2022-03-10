@@ -21,7 +21,7 @@ const Weather_info = (props) => {
 								</h2>
 								<div className="date">
 									<h5>{props.date}</h5>
-									<h5>{props.time + 5} GMT+0500 (Pakistan Standard Time)</h5>
+									<h5>{props.time} GMT+0500 (Pakistan Standard Time)</h5>
 								</div>
 								<div className=" ">
 									<div className="centig">

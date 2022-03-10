@@ -24,10 +24,10 @@ const Config = () => {
 	const onSearch = () => {
 		setGetval(search);
 	};
-// Fetch Data from API
+	// Fetch Data from API
 	const getData = () => {
 		return fetch(
-			`${process.env.REACT_APP_API_URL}/weather?q=${getval}&units=imperial&APPID=${process.env.REACT_APP_API_KEY}`,
+			` https://api.openweathermap.org/data/2.5/weather?q=${getval}&units=imperial&APPID=3d2da8da5e69f614cc32bece4b629445`,
 			{
 				method: "GET",
 			},
@@ -75,8 +75,8 @@ const Config = () => {
 
 	useEffect(() => {
 		getData();
- 	}, [getval]);
- 	return (
+	}, [getval]);
+	return (
 		<>
 			<Weather_info
 				title="Find current weather condition"
