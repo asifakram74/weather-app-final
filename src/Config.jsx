@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Weather_info from "./components/Home/Weather_info";
 import Icon from "./assets/images/01d.png";
 const Config = () => {
+
 	// get value from input
 	const [search, setSearch] = useState("");
 	// save search value

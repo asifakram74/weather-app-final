@@ -7,7 +7,7 @@ import App from "./App";
 import "./assets/css/style.css";
 import "./assets/css/bootstrap.css";
 // import "./assets/css/font-awesome.css";
-require("dotenv").config();
+// require("dotenv").config();
 
 ReactDOM.render(
 	<BrowserRouter>
